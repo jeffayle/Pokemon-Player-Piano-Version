@@ -1,0 +1,27 @@
+# Pokemon Player Piano Version
+
+Pokemon Player Piano Version is a romhack of Pokemon FireRed Version (USA/EU
+v1.1, CRC 84ee4776) that plays the game like a player piano using [the "blind and
+deaf" input sequence developed by
+MartSnack](https://github.com/KeeyanGhoreshi/PokemonFireredSingleSequence)
+
+## Compiling From Source
+
+Necessary software:
+
+- `arm-none-eabi` cross compiler (the compiler from `devkitARM` can be used but
+  is not necessary)
+- `python3`
+- `make`
+
+Acquire the correct Pokmenon FireRed Version rom and save it as `FR.gba` in the
+directory with the source code. 
+
+Download [the complete `input.txt` from
+PokemonFireredSingleSequence](https://raw.githubusercontent.com/KeeyanGhoreshi/PokemonFireredSingleSequence/main/fullSequence/inputs.txt)
+into the directory with the source code.
+
+Change line 15 of `inputs.txt` to `['a', 65],`.
+
+Run `make` to build `PokemonPlayerPianoVersion.gba`, or 
+`make PokemonPlayerPianoVersion.ips` to build an ips patch.

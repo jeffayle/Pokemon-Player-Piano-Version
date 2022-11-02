@@ -1,0 +1,10 @@
+*.gba
+*.sav
+*.elf
+*.o
+*.bin
+*.ips
+inputs.txt
+output_table
+output_code
+
